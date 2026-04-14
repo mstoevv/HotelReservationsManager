@@ -1,0 +1,66 @@
+﻿@model HotelReservationsManager.Models.Domain.Room
+
+@{
+    ViewData["Title"] = "Редактиране на стая";
+}
+
+<div class="container mt-4">
+    <h2>Редактиране на стая №@Model.Number</h2>
+    <hr />
+    <div class="row">
+        <div class="col-md-4">
+            <form asp-action="Edit">
+                <div asp-validation-summary="ModelOnly" class="text-danger"></div>
+                
+                <input type="hidden" asp-for="Id" />
+
+                <div class="form-group mb-3">
+                    <label class="control-label">Номер на стая</label>
+                    <input asp-for="Number" class="form-control" />
+                    <span asp-validation-for="Number" class="text-danger"></span>
+                </div>
+
+                <div class="form-group mb-3">
+                    <label class="control-label">Капацитет</label>
+                    <input asp-for="Capacity" class="form-control" />
+                    <span asp-validation-for="Capacity" class="text-danger"></span>
+                </div>
+
+                <div class="form-group mb-3">
+                    <label class="control-label">Тип на стаята</label>
+                    <input asp-for="Type" class="form-control" />
+                    <span asp-validation-for="Type" class="text-danger"></span>
+                </div>
+
+                <div class="form-group mb-3">
+                    <label class="control-label">Цена за легло (възрастен)</label>
+                    <input asp-for="PriceAdultBed" class="form-control" />
+                    <span asp-validation-for="PriceAdultBed" class="text-danger"></span>
+                </div>
+
+                <div class="form-group mb-3">
+                    <label class="control-label">Цена за легло (дете)</label>
+                    <input asp-for="PriceChildBed" class="form-control" />
+                    <span asp-validation-for="PriceChildBed" class="text-danger"></span>
+                </div>
+
+                <div class="form-group form-check mb-3">
+                    <label class="form-check-label">
+                        <input class="form-check-input" asp-for="IsFree" /> Свободна ли е?
+                    </label>
+                </div>
+
+                <div class="form-group">
+                    <input type="submit" value="Запази" class="btn btn-primary" />
+                    <a asp-action="Index" class="btn btn-secondary">Назад</a>
+                </div>
+            </form>
+        </div>
+    </div>
+</div>
+
+@section Scripts {
+    @{
+        await Html.RenderPartialAsync("_ValidationScriptsPartial");
+    }
+}

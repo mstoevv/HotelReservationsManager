@@ -1,0 +1,64 @@
+﻿@model IEnumerable<HotelReservationsManager.Models.Domain.Client>
+
+@{
+    ViewData["Title"] = "Управление на клиенти";
+}
+
+<h2>Клиенти</h2>
+
+<form asp-action="Index" method="get" class="mb-3">
+    <div class="row">
+        <div class="col-md-4">
+            <input type="text" name="filter" value="@ViewBag.Filter" class="form-control" placeholder="Търси по име..." />
+        </div>
+        <div class="col-md-2">
+            <select name="pageSize" class="form-control">
+                <option value="10">10 на страница</option>
+                <option value="25">25 на страница</option>
+                <option value="50">50 на страница</option>
+            </select>
+        </div>
+        <div class="col-md-2">
+            <button type="submit" class="btn btn-primary">Филтрирай</button>
+        </div>
+        <div class="col text-end">
+            <a asp-action="Create" class="btn btn-success">Добави нов клиент</a>
+        </div>
+    </div>
+</form>
+
+<table class="table table-hover">
+    <thead>
+        <tr>
+            <th>Име</th>
+            <th>Фамилия</th>
+            <th>Телефон</th>
+            <th>Email</th>
+            <th>Възрастен</th>
+            <th>Действия</th>
+        </tr>
+    </thead>
+    <tbody>
+        @foreach (var item in Model)
+        {
+            <tr>
+                <td>@item.FirstName</td>
+                <td>@item.LastName</td>
+                <td>@item.PhoneNumber</td>
+                <td>@item.Email</td>
+                <td>@(item.IsAdult ? "Да" : "Не")</td>
+                <td>
+                    <a asp-action="Edit" asp-route-id="@item.Id" class="btn btn-sm btn-warning">Редактирай</a>
+                </td>
+            </tr>
+        }
+    </tbody>
+</table>
+
+<div>
+    @for (int i = 1; i <= ViewBag.TotalPages; i++)
+    {
+        <a asp-action="Index" asp-route-pageIndex="@i" asp-route-filter="@ViewBag.Filter"
+           class="btn btn-sm @(i == ViewBag.PageIndex ? "btn-dark" : "btn-outline-dark")">@i</a>
+    }
+</div>

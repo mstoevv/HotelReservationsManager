@@ -1,0 +1,93 @@
+﻿@model HotelReservationsManager.Models.Domain.User
+
+@{
+    ViewData["Title"] = "Добавяне на служител";
+}
+
+<div class="container mt-4">
+    <div class="card shadow">
+        <div class="card-header bg-success text-white">
+            <h4 class="mb-0">👤 Добавяне на нов служител</h4>
+        </div>
+        <div class="card-body">
+            @* Сложихме method="post", за да сме сигурни, че данните се пращат *@
+            <form asp-action="Create" method="post">
+                
+                @* ВАЖНО: Сменихме на "All", за да виждаш абсолютно всички грешки, които блокират бутона *@
+                <div asp-validation-summary="All" class="text-danger"></div>
+
+                <div class="row">
+                    <div class="col-md-6 mb-3">
+                        <label class="form-label fw-bold">Потребителско име</label>
+                        <input asp-for="Username" class="form-control" placeholder="Въведете username..." />
+                        <span asp-validation-for="Username" class="text-danger"></span>
+                    </div>
+
+                    <div class="col-md-6 mb-3">
+                        <label class="form-label fw-bold">Парола</label>
+                        <input asp-for="Password" type="password" class="form-control" placeholder="********" />
+                        <span asp-validation-for="Password" class="text-danger"></span>
+                    </div>
+                </div>
+
+                <hr />
+
+                <div class="row">
+                    <div class="col-md-6 mb-3">
+                        <label class="form-label fw-bold">Име</label>
+                        <input asp-for="FirstName" class="form-control" />
+                        <span asp-validation-for="FirstName" class="text-danger"></span>
+                    </div>
+                    <div class="col-md-6 mb-3">
+                        <label class="form-label fw-bold">Фамилия</label>
+                        <input asp-for="LastName" class="form-control" />
+                        <span asp-validation-for="LastName" class="text-danger"></span>
+                    </div>
+                </div>
+
+                <div class="row">
+                    <div class="col-md-6 mb-3">
+                        <label class="form-label fw-bold">ЕГН</label>
+                        @* Увери се, че в модела User се казва точно EGN, а не UCN *@
+                        <input asp-for="EGN" class="form-control" />
+                        <span asp-validation-for="EGN" class="text-danger"></span>
+                    </div>
+                    <div class="col-md-6 mb-3">
+                        <label class="form-label fw-bold">Дата на назначаване</label>
+                        <input asp-for="AppointmentDate" type="date" class="form-control" value="@DateTime.Now.ToString("yyyy-MM-dd")" />
+                        <span asp-validation-for="AppointmentDate" class="text-danger"></span>
+                    </div>
+                </div>
+
+                <div class="row">
+                    <div class="col-md-6 mb-3">
+                        <label class="form-label fw-bold">Имейл</label>
+                        <input asp-for="Email" type="email" class="form-control" placeholder="example@mail.com" />
+                        <span asp-validation-for="Email" class="text-danger"></span>
+                    </div>
+                    <div class="col-md-6 mb-3">
+                        <label class="form-label fw-bold">Телефон</label>
+                        <input asp-for="PhoneNumber" class="form-control" placeholder="08XXXXXXXX" />
+                        <span asp-validation-for="PhoneNumber" class="text-danger"></span>
+                    </div>
+                </div>
+
+                <div class="mt-4 border-top pt-3">
+                    @* Бутонът е тип submit - той ще задейства Create метода в контролера *@
+                    <button type="submit" class="btn btn-success px-4">
+                        <i class="bi bi-check-lg"></i> Създай служител
+                    </button>
+                    <a asp-action="Index" class="btn btn-outline-secondary px-4">
+                        <i class="bi bi-arrow-left"></i> Назад
+                    </a>
+                </div>
+            </form>
+        </div>
+    </div>
+</div>
+
+@section Scripts {
+    @{
+        await Html.RenderPartialAsync("_ValidationScriptsPartial");
+    }
+}

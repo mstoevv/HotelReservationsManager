@@ -1,0 +1,76 @@
+﻿@model HotelReservationsManager.Models.Domain.User
+
+@{
+    ViewData["Title"] = "Регистрация";
+}
+
+<div class="row justify-content-center mt-5">
+    <div class="col-md-8">
+        <div class="card shadow">
+            <div class="card-header bg-success text-white">
+                <h4 class="mb-0">Регистрация на служител</h4>
+            </div>
+            <div class="card-body">
+                <form asp-action="Register" method="post">
+                    <div asp-validation-summary="All" class="text-danger"></div>
+
+                    <div class="row mb-3">
+                        <div class="col-md-6">
+                            <label asp-for="Username" class="control-label">Потребителско име</label>
+                            <input asp-for="Username" class="form-control" />
+                            <span asp-validation-for="Username" class="text-danger"></span>
+                        </div>
+                        <div class="col-md-6">
+                            <label asp-for="Password" class="control-label">Парола</label>
+                            <input asp-for="Password" type="password" class="form-control" />
+                            <span asp-validation-for="Password" class="text-danger"></span>
+                        </div>
+                    </div>
+
+                    <div class="row mb-3">
+                        <div class="col-md-4">
+                            <label asp-for="FirstName" class="control-label">Име</label>
+                            <input asp-for="FirstName" class="form-control" />
+                        </div>
+                        <div class="col-md-4">
+                            <label asp-for="MiddleName" class="control-label">Презиме</label>
+                            <input asp-for="MiddleName" class="form-control" />
+                        </div>
+                        <div class="col-md-4">
+                            <label asp-for="LastName" class="control-label">Фамилия</label>
+                            <input asp-for="LastName" class="form-control" />
+                        </div>
+                    </div>
+
+                    <div class="row mb-3">
+                        <div class="col-md-6">
+                            <label asp-for="EGN" class="control-label">ЕГН</label>
+                            <input asp-for="EGN" class="form-control" maxlength="10" />
+                            <span asp-validation-for="EGN" class="text-danger"></span>
+                        </div>
+                        <div class="col-md-6">
+                            <label asp-for="PhoneNumber" class="control-label">Телефон</label>
+                            <input asp-for="PhoneNumber" class="form-control" maxlength="10" />
+                        </div>
+                    </div>
+
+                    <div class="mb-3">
+                        <label asp-for="Email" class="control-label">Имейл</label>
+                        <input asp-for="Email" type="email" class="form-control" />
+                        <span asp-validation-for="Email" class="text-danger"></span>
+                    </div>
+
+                    @* Скрити полета за задължителните данни, които не се попълват от потребителя *@
+                    <input type="hidden" asp-for="AppointmentDate" value="@DateTime.Now.ToString("yyyy-MM-dd")" />
+                    <input type="hidden" asp-for="IsActive" value="true" />
+
+                    <div class="d-grid gap-2">
+                        <button type="submit" class="btn btn-success">Регистрирай ме</button>
+                        <a asp-action="Login" class="btn btn-link">Върни се към вход</a>
+                    </div>
+                </form>
+            </div>
+        </div>
+    </div>
+</div>
+</div>

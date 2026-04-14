@@ -1,0 +1,81 @@
+﻿@model IEnumerable<HotelReservationsManager.Models.Domain.Reservation>
+
+@{
+    ViewData["Title"] = "Списък Резервации";
+}
+
+<div class="container mt-4">
+    <div class="d-flex justify-content-between align-items-center mb-4">
+        <h2>📅 Резервации</h2>
+        <a asp-action="Create" class="btn btn-primary shadow-sm">Нова резервация</a>
+    </div>
+
+    @if (ViewBag.CurrentRoomId != null)
+    {
+        <div class="alert alert-info d-flex justify-content-between align-items-center shadow-sm">
+            <span>
+                <strong>Филтър:</strong> Показване на заетост за <strong>Стая №@ViewBag.CurrentRoomId</strong>
+            </span>
+            <a asp-action="Index" class="btn btn-sm btn-outline-secondary">Покажи всички</a>
+        </div>
+    }
+
+    <div class="card shadow">
+        <div class="card-body p-0">
+            <div class="table-responsive">
+                <table class="table table-hover mb-0">
+                    <thead class="table-light">
+                        <tr>
+                            <th class="ps-4">Стая №</th>
+                            <th>Настаняване</th>
+                            <th>Освобождаване</th>
+                            <th>Обслужване</th>
+                            <th>Крайна цена</th>
+                            <th class="text-center">Действия</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        @foreach (var item in Model)
+                        {
+                            <tr>
+                                <td class="ps-4"><strong>@item.Room.Number</strong></td>
+                                <td><span class="badge bg-light text-dark">@item.CheckInDate.ToShortDateString()</span></td>
+                                <td><span class="badge bg-light text-dark">@item.CheckOutDate.ToShortDateString()</span></td>
+                                <td>
+                                    @if (item.IsAllInclusive)
+                                    {
+                                        <span class="badge bg-success">All Inclusive</span>
+                                    }
+                                    else
+                                    {
+                                        <span class="badge bg-secondary">Само нощувка</span>
+                                    }
+                                </td>
+                                <td><span class="text-primary fw-bold">@item.FinalPrice.ToString("F2") лв.</span></td>
+                                <td class="text-center">
+                                    @* БУТОН ЗА ИЗТРИВАНЕ/ОТКАЗВАНЕ - Сега е достъпен за всички роли *@
+                                    <form asp-action="Delete" asp-route-id="@item.Id" method="post" class="d-inline">
+                                        @if (User.IsInRole("Admin") || User.IsInRole("Employee"))
+                                        {
+                                            <button type="submit" class="btn btn-outline-danger btn-sm"
+                                                    onclick="return confirm('Сигурни ли сте, че искате да изтриете тази резервация? Стаята ще бъде освободена.')">
+                                                🗑️ Изтрий
+                                            </button>
+                                        }
+                                        else if (User.IsInRole("Guest"))
+                                        {
+                                            <button type="submit" class="btn btn-outline-warning btn-sm"
+                                                    onclick="return confirm('Сигурни ли сте, че искате да анулирате вашата резервация?')">
+                                                ❌ Откажи престоя
+                                            </button>
+                                        }
+                                    </form>
+                                </td>
+                            </tr>
+                        }
+                    </tbody>
+                </table>
+            </div>
+        </div>
+    </div>
+</div>
