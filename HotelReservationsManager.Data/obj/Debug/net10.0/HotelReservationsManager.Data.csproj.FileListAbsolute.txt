@@ -1,0 +1,15 @@
+C:\Users\PC\OneDrive\Desktop\progamming\C#\HotelReservationsManager\HotelReservationsManager.Data\obj\Debug\net10.0\HotelReservationsManager.Data.csproj.AssemblyReference.cache
+C:\Users\PC\OneDrive\Desktop\progamming\C#\HotelReservationsManager\HotelReservationsManager.Data\obj\Debug\net10.0\HotelReservationsManager.Data.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\PC\OneDrive\Desktop\progamming\C#\HotelReservationsManager\HotelReservationsManager.Data\obj\Debug\net10.0\HotelReservationsManager.Data.AssemblyInfoInputs.cache
+C:\Users\PC\OneDrive\Desktop\progamming\C#\HotelReservationsManager\HotelReservationsManager.Data\obj\Debug\net10.0\HotelReservationsManager.Data.AssemblyInfo.cs
+C:\Users\PC\OneDrive\Desktop\progamming\C#\HotelReservationsManager\HotelReservationsManager.Data\obj\Debug\net10.0\HotelReservationsManager.Data.csproj.CoreCompileInputs.cache
+C:\Users\PC\OneDrive\Desktop\progamming\C#\HotelReservationsManager\HotelReservationsManager.Data\bin\Debug\net10.0\HotelReservationsManager.Data.deps.json
+C:\Users\PC\OneDrive\Desktop\progamming\C#\HotelReservationsManager\HotelReservationsManager.Data\bin\Debug\net10.0\HotelReservationsManager.Data.dll
+C:\Users\PC\OneDrive\Desktop\progamming\C#\HotelReservationsManager\HotelReservationsManager.Data\bin\Debug\net10.0\HotelReservationsManager.Data.pdb
+C:\Users\PC\OneDrive\Desktop\progamming\C#\HotelReservationsManager\HotelReservationsManager.Data\bin\Debug\net10.0\HotelReservationsManager.Models.dll
+C:\Users\PC\OneDrive\Desktop\progamming\C#\HotelReservationsManager\HotelReservationsManager.Data\bin\Debug\net10.0\HotelReservationsManager.Models.pdb
+C:\Users\PC\OneDrive\Desktop\progamming\C#\HotelReservationsManager\HotelReservationsManager.Data\obj\Debug\net10.0\HotelRes.564796D6.Up2Date
+C:\Users\PC\OneDrive\Desktop\progamming\C#\HotelReservationsManager\HotelReservationsManager.Data\obj\Debug\net10.0\HotelReservationsManager.Data.dll
+C:\Users\PC\OneDrive\Desktop\progamming\C#\HotelReservationsManager\HotelReservationsManager.Data\obj\Debug\net10.0\refint\HotelReservationsManager.Data.dll
+C:\Users\PC\OneDrive\Desktop\progamming\C#\HotelReservationsManager\HotelReservationsManager.Data\obj\Debug\net10.0\HotelReservationsManager.Data.pdb
+C:\Users\PC\OneDrive\Desktop\progamming\C#\HotelReservationsManager\HotelReservationsManager.Data\obj\Debug\net10.0\ref\HotelReservationsManager.Data.dll
