@@ -1,0 +1,11 @@
+C:\Users\PC\OneDrive\Desktop\progamming\C#\HotelReservationsManager\HotelReservationsManager.Models\bin\Debug\net10.0\HotelReservationsManager.Models.deps.json
+C:\Users\PC\OneDrive\Desktop\progamming\C#\HotelReservationsManager\HotelReservationsManager.Models\bin\Debug\net10.0\HotelReservationsManager.Models.dll
+C:\Users\PC\OneDrive\Desktop\progamming\C#\HotelReservationsManager\HotelReservationsManager.Models\bin\Debug\net10.0\HotelReservationsManager.Models.pdb
+C:\Users\PC\OneDrive\Desktop\progamming\C#\HotelReservationsManager\HotelReservationsManager.Models\obj\Debug\net10.0\HotelReservationsManager.Models.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\PC\OneDrive\Desktop\progamming\C#\HotelReservationsManager\HotelReservationsManager.Models\obj\Debug\net10.0\HotelReservationsManager.Models.AssemblyInfoInputs.cache
+C:\Users\PC\OneDrive\Desktop\progamming\C#\HotelReservationsManager\HotelReservationsManager.Models\obj\Debug\net10.0\HotelReservationsManager.Models.AssemblyInfo.cs
+C:\Users\PC\OneDrive\Desktop\progamming\C#\HotelReservationsManager\HotelReservationsManager.Models\obj\Debug\net10.0\HotelReservationsManager.Models.csproj.CoreCompileInputs.cache
+C:\Users\PC\OneDrive\Desktop\progamming\C#\HotelReservationsManager\HotelReservationsManager.Models\obj\Debug\net10.0\HotelReservationsManager.Models.dll
+C:\Users\PC\OneDrive\Desktop\progamming\C#\HotelReservationsManager\HotelReservationsManager.Models\obj\Debug\net10.0\refint\HotelReservationsManager.Models.dll
+C:\Users\PC\OneDrive\Desktop\progamming\C#\HotelReservationsManager\HotelReservationsManager.Models\obj\Debug\net10.0\HotelReservationsManager.Models.pdb
+C:\Users\PC\OneDrive\Desktop\progamming\C#\HotelReservationsManager\HotelReservationsManager.Models\obj\Debug\net10.0\ref\HotelReservationsManager.Models.dll
