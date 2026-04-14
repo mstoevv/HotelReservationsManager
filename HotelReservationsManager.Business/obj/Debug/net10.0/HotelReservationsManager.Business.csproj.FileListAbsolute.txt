@@ -1,0 +1,17 @@
+C:\Users\PC\OneDrive\Desktop\progamming\C#\HotelReservationsManager\HotelReservationsManager.Business\obj\Debug\net10.0\HotelReservationsManager.Business.csproj.AssemblyReference.cache
+C:\Users\PC\OneDrive\Desktop\progamming\C#\HotelReservationsManager\HotelReservationsManager.Business\obj\Debug\net10.0\HotelReservationsManager.Business.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\PC\OneDrive\Desktop\progamming\C#\HotelReservationsManager\HotelReservationsManager.Business\obj\Debug\net10.0\HotelReservationsManager.Business.AssemblyInfoInputs.cache
+C:\Users\PC\OneDrive\Desktop\progamming\C#\HotelReservationsManager\HotelReservationsManager.Business\obj\Debug\net10.0\HotelReservationsManager.Business.AssemblyInfo.cs
+C:\Users\PC\OneDrive\Desktop\progamming\C#\HotelReservationsManager\HotelReservationsManager.Business\obj\Debug\net10.0\HotelReservationsManager.Business.csproj.CoreCompileInputs.cache
+C:\Users\PC\OneDrive\Desktop\progamming\C#\HotelReservationsManager\HotelReservationsManager.Business\bin\Debug\net10.0\HotelReservationsManager.Business.deps.json
+C:\Users\PC\OneDrive\Desktop\progamming\C#\HotelReservationsManager\HotelReservationsManager.Business\bin\Debug\net10.0\HotelReservationsManager.Business.dll
+C:\Users\PC\OneDrive\Desktop\progamming\C#\HotelReservationsManager\HotelReservationsManager.Business\bin\Debug\net10.0\HotelReservationsManager.Business.pdb
+C:\Users\PC\OneDrive\Desktop\progamming\C#\HotelReservationsManager\HotelReservationsManager.Business\bin\Debug\net10.0\HotelReservationsManager.Data.dll
+C:\Users\PC\OneDrive\Desktop\progamming\C#\HotelReservationsManager\HotelReservationsManager.Business\bin\Debug\net10.0\HotelReservationsManager.Models.dll
+C:\Users\PC\OneDrive\Desktop\progamming\C#\HotelReservationsManager\HotelReservationsManager.Business\bin\Debug\net10.0\HotelReservationsManager.Data.pdb
+C:\Users\PC\OneDrive\Desktop\progamming\C#\HotelReservationsManager\HotelReservationsManager.Business\bin\Debug\net10.0\HotelReservationsManager.Models.pdb
+C:\Users\PC\OneDrive\Desktop\progamming\C#\HotelReservationsManager\HotelReservationsManager.Business\obj\Debug\net10.0\HotelRes.02ED4A03.Up2Date
+C:\Users\PC\OneDrive\Desktop\progamming\C#\HotelReservationsManager\HotelReservationsManager.Business\obj\Debug\net10.0\HotelReservationsManager.Business.dll
+C:\Users\PC\OneDrive\Desktop\progamming\C#\HotelReservationsManager\HotelReservationsManager.Business\obj\Debug\net10.0\refint\HotelReservationsManager.Business.dll
+C:\Users\PC\OneDrive\Desktop\progamming\C#\HotelReservationsManager\HotelReservationsManager.Business\obj\Debug\net10.0\HotelReservationsManager.Business.pdb
+C:\Users\PC\OneDrive\Desktop\progamming\C#\HotelReservationsManager\HotelReservationsManager.Business\obj\Debug\net10.0\ref\HotelReservationsManager.Business.dll
