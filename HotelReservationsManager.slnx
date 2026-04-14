@@ -1,0 +1,7 @@
+<Solution>
+  <Project Path="HotelReservationsManager.Business/HotelReservationsManager.Business.csproj" />
+  <Project Path="HotelReservationsManager.Data/HotelReservationsManager.Data.csproj" />
+  <Project Path="HotelReservationsManager.Models/HotelReservationsManager.Models.csproj" />
+  <Project Path="HotelReservationsManager.UnitTests/HotelReservationsManager.UnitTests.csproj" />
+  <Project Path="HotelReservationsManager/HotelReservationsManager.Web.csproj" />
+</Solution>
